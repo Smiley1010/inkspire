@@ -120,13 +120,12 @@ export default async function FeaturedContent() {
               </article>
             ) : (
               <div className={styles.emptyFeature}>
-                <span className={styles.emptyMark}>I.</span>
-                <h3>Your next featured story starts here.</h3>
-                <p>
-                  Publish an article and mark it as featured from your
-                  dashboard to showcase it in this space.
-                </p>
-              </div>
+  <h3>Your next featured story starts here.</h3>
+  <p>
+    Publish an article and mark it as featured from your
+    dashboard to showcase it in this space.
+  </p>
+</div>
             )}
           </div>
 

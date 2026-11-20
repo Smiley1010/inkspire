@@ -154,13 +154,6 @@
   border: 1px solid var(--border);
 }
 
-.emptyMark {
-  display: block;
-  color: var(--accent);
-  font-family: Georgia, serif;
-  font-size: 40px;
-  margin-bottom: 14px;
-}
 
 .emptyFeature h3 {
   font-family: Georgia, serif;
