@@ -300,16 +300,18 @@
 .newsletterBlock {
   margin-top: 42px;
   padding: 26px 22px;
-  background: var(--primary);
-  color: #fff;
+  background: var(--newsletter-bg);
+  color: var(--newsletter-text);
+  border: 1px solid var(--border);
 }
 
 .newsletterEyebrow {
-  color: #E9A17F;
+  color: var(--accent);
   font-size: 9px;
 }
 
 .newsletterBlock h3 {
+  color: var(--newsletter-text);
   font-family: Georgia, serif;
   font-size: 25px;
   font-weight: 400;
@@ -318,10 +320,16 @@
 }
 
 .newsletterBlock p {
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--newsletter-muted);
   font-size: 12px;
   line-height: 1.8;
   margin-bottom: 20px;
+}
+
+.newsletterLink {
+  display: inline-block;
+  color: var(--newsletter-text);
+  border-bottom: 1px solid var(--accent);
 }
 
 .newsletterLink {

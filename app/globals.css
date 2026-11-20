@@ -8,6 +8,9 @@
   --text: #263238;
   --muted: #777777;
   --border: #E5DED2;
+--newsletter-bg: #14263D;
+--newsletter-text: #FFFFFF;
+--newsletter-muted: rgba(255, 255, 255, 0.75);
 
   --max-width: 1536px;
 }
@@ -22,6 +25,9 @@
   --text: #E8E0D5;
   --muted: #A5A7AA;
   --border: #343C46;
+  --newsletter-bg: #222A33;
+--newsletter-text: #E8E0D5;
+--newsletter-muted: #A5A7AA;
 }
 
 * {
