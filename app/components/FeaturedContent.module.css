@@ -1,0 +1,368 @@
+
+.section {
+  padding: 80px 0;
+  border-top: 1px solid var(--border);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 24px;
+  margin-bottom: 34px;
+}
+
+.eyebrow,
+.blockLabel,
+.newsletterEyebrow {
+  display: block;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.sectionHeader h2 {
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 400;
+  letter-spacing: -1.5px;
+}
+
+.viewAll,
+.readLink,
+.newsletterLink {
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 5px;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(260px, 0.8fr);
+  gap: 54px;
+}
+
+.mainColumn {
+  min-width: 0;
+}
+
+.featuredBlock,
+.popularBlock,
+.editorBlock,
+.categoryBlock {
+  margin-bottom: 42px;
+}
+
+.featuredArticle {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 30px;
+}
+
+.featuredImageLink {
+  display: block;
+  overflow: hidden;
+  background: var(--border);
+  aspect-ratio: 16 / 8;
+  margin-bottom: 23px;
+}
+
+.featuredImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.featuredImageLink:hover .featuredImage {
+  transform: scale(1.025);
+}
+
+.imagePlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: var(--background);
+  font-family: Georgia, serif;
+  font-size: 22px;
+  letter-spacing: 5px;
+}
+
+.featuredDetails {
+  max-width: 700px;
+}
+
+.articleMeta {
+  display: flex;
+  gap: 16px;
+  color: var(--muted);
+  font-size: 11px;
+  margin-bottom: 13px;
+}
+
+.articleMeta span:first-child {
+  color: var(--accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.featuredDetails h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(27px, 3vw, 39px);
+  line-height: 1.16;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  margin-bottom: 12px;
+}
+
+.featuredDetails h3 a:hover,
+.popularDetails h3 a:hover,
+.editorDetails h3 a:hover {
+  color: var(--accent);
+}
+
+.featuredDetails > p {
+  max-width: 620px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.articleByline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  color: var(--muted);
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+.readLink {
+  display: inline-block;
+}
+
+.emptyFeature {
+  padding: 42px 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.emptyMark {
+  display: block;
+  color: var(--accent);
+  font-family: Georgia, serif;
+  font-size: 40px;
+  margin-bottom: 14px;
+}
+
+.emptyFeature h3 {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.emptyFeature p,
+.emptyMessage {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.blockHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtleLabel {
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+.popularList {
+  border-top: 1px solid var(--border);
+}
+
+.popularItem {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 15px;
+  padding: 19px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.popularNumber {
+  color: var(--accent);
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+.popularCategory,
+.editorDetails > span {
+  display: block;
+  color: var(--accent);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.popularDetails h3 {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.popularMeta {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.sidebar {
+  border-left: 1px solid var(--border);
+  padding-left: 30px;
+}
+
+.editorList {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.editorItem {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.editorImageLink {
+  display: block;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--border);
+}
+
+.editorImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.editorDetails h3 {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+
+.editorDetails small {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.categoryList {
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryLink {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-size: 13px;
+  transition: color 0.2s ease;
+}
+
+.categoryLink:hover {
+  color: var(--accent);
+}
+
+.categoryLink span {
+  color: var(--accent);
+}
+
+.newsletterBlock {
+  margin-top: 42px;
+  padding: 26px 22px;
+  background: var(--primary);
+  color: #fff;
+}
+
+.newsletterEyebrow {
+  color: #E9A17F;
+  font-size: 9px;
+}
+
+.newsletterBlock h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.newsletterBlock p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.newsletterLink {
+  display: inline-block;
+  color: #fff;
+  border-color: #E9A17F;
+}
+
+@media (max-width: 900px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .sidebar {
+    border-left: 0;
+    border-top: 1px solid var(--border);
+    padding: 30px 0 0;
+  }
+
+  .editorList {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 55px 0;
+  }
+
+  .sectionHeader {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .editorList {
+    grid-template-columns: 1fr;
+  }
+
+  .featuredImageLink {
+    aspect-ratio: 4 / 3;
+  }
+}

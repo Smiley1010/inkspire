@@ -1,0 +1,182 @@
+
+.page {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text);
+}
+
+.container {
+  width: min(100% - 48px, 1000px);
+  margin: 0 auto;
+  padding: 70px 0 100px;
+}
+
+.heading {
+  margin-bottom: 42px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 30px;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.heading h1 {
+  color: var(--primary);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 6vw, 66px);
+  letter-spacing: -2px;
+  font-weight: 500;
+}
+
+.heading h1 em {
+  color: var(--accent);
+  font-weight: 400;
+}
+
+.heading > p:last-child {
+  margin-top: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form label {
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  padding: 14px 15px;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  outline: none;
+  font-size: 14px;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+  border-color: var(--accent);
+}
+
+.form textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 20px;
+}
+
+.row > div {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.imagePreview {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.imagePreview img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.actions button {
+  padding: 14px 22px;
+  border: 1px solid var(--primary);
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.draftButton {
+  background: transparent;
+  color: var(--primary);
+}
+
+.publishButton {
+  background: var(--primary);
+  color: var(--background);
+}
+
+.message {
+  color: #b54736;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+.loading {
+  min-height: 60vh;
+  display: grid;
+  place-content: center;
+  gap: 15px;
+  color: var(--text);
+}
+
+.loading button {
+  padding: 12px 20px;
+  background: var(--primary);
+  color: var(--background);
+  border: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: min(100% - 32px, 1000px);
+    padding-top: 45px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .actions {
+    flex-direction: column-reverse;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+}

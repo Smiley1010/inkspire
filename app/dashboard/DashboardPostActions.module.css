@@ -1,0 +1,54 @@
+
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.editButton,
+.deleteButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 13px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.editButton {
+  background: var(--primary);
+  color: var(--background);
+  border-color: var(--primary);
+}
+
+.editButton:hover {
+  opacity: 0.85;
+}
+
+.deleteButton {
+  background: transparent;
+  color: #b34b4b;
+  cursor: pointer;
+}
+
+.deleteButton:hover:not(:disabled) {
+  background: #fff0f0;
+  border-color: #d99b9b;
+}
+
+.deleteButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.error {
+  flex-basis: 100%;
+  color: #b34b4b;
+  font-size: 12px;
+}
